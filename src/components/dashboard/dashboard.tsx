@@ -59,7 +59,7 @@ return(
           <td className = {styles.td}>{c.symbol}</td>
           <td className = {styles.td}>{c.name}</td>
           <td className = {styles.td}>{model.currencyType == CurrencyType.USD ? '$' :'€'} {(Math.round(c.price * 100) / 100).toFixed(2)}</td>
-          <th className = {styles.td} style = {{color:c.change < 0 ? 'red':'green' }}>{c.change}%</th>
+          <td className = {styles.td} style = {{color:c.change < 0 ? 'red':'green' }}>{c.change}%</td>
         </tr>
         ))}
       </table>
